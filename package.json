@@ -1,0 +1,21 @@
+{
+  "name": "circle-wallet-x402",
+  "version": "0.1.0",
+  "description": "Pay an x402 v2 paywall from a Circle developer-controlled wallet. Circle holds the key, the agent holds no key and no gas.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "setup": "node circle-x402.mjs setup",
+    "create-wallet": "node circle-x402.mjs create-wallet",
+    "pay": "node circle-x402.mjs pay",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@circle-fin/developer-controlled-wallets": "^10.8.1",
+    "viem": "^2.55.2"
+  }
+}
